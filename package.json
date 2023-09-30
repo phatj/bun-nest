@@ -7,9 +7,10 @@
   "license": "UNLICENSED",
   "scripts": {
     "compile": "nest build",
+    "dev": "bun --hot src/main.ts",
+    "docker:build": "docker build . -t fws/bun-nest",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
-    "dev": "bun --hot src/main.ts",
     "start": "bun dist/main.js",
     "typecheck": "tsc --noEmit --project tsconfig.build.json",
     "typecheck:watch": "bun run typecheck --watch"
