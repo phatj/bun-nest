@@ -6,11 +6,11 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "build": "bun build src/main.ts",
+    "compile": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "dev": "bun --hot src/main.ts",
-    "start": "bun dist/main",
+    "start": "bun dist/main.js",
     "typecheck": "tsc --noEmit --project tsconfig.build.json",
     "typecheck:watch": "bun run typecheck --watch"
   },
